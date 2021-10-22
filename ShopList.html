@@ -6,41 +6,62 @@
     <link rel="stylesheet" href="FirstFile.css">
 </head>
 <body>
-    <header>
+    <div class="container">
+        <header>
+            <img class="logotip" src="img/Logotip.PNG" alt="Новый интернет магазин">
+            <div class="menu">
+                <a href="MainPage.html">
+                    <!-- <p class="menu-bot">На главную</p> -->
+                    На главную
+                </a>
+                <a href="ShopList.html">Список товаров</a>
+            </div>
+        </header>
+        <h2>Каталог магазина</h2>
         <hr>
-        <a href="MainPage.html">На главную</a>
-        <hr>
-    </header>
-    <h2>Каталог магазина</h2>
-    <hr>
-    <ul>
-        <li>
-            Карандаш автоматический, 2B
-            <a href="Pencil.html">Подробнее...</a>
-            <img src="img/pencil.webp" alt="Фото"> <br>
-            Цена: 39.99 руб.
-            <a href="https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/">Ссылка на сайт Ашана</a>
-        </li>
-
-        <hr>
-        <li>Ручка шариковая Stabilo синяя
-            <img src="img/pen.webp" alt="Фото"> <br>
-            Цена: 93.00 руб.
-            <a href="https://www.auchan.ru/product/ruchka-sharikovaya-stabilo-sinyaya/">Ссылка на сайт Ашана</a>
-        </li>
-        <hr>
-        <li>
-            Линейка Hatber пластиковая, 30 см
-            <img src="img/rules.webp" alt="Фото"> <br>
-            Цена: 25.99 руб.
-            <a href="https://www.auchan.ru/product/lineyka-plastik-30sm/">Ссылка на сайт Ашана</a>
-        </li>
-        <hr>
-    </ul>
-    <footer>
-        <hr>
-        <a href="About.html">О магазине</a>
-        <hr>
-    </footer>
+        <div class="main"> <!-- Плитки -->
+            <div class="card">
+                <!-- "https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/" -->
+                <a href="Pencil.html">
+                    <img class="card-img" src="img/pencil.png" alt="Фото">
+                </a>
+                <a href="Pencil.html"><h3 class="name">Карандаш автоматический, 2B</h3></a>
+                <h3 class="price">39.99 руб.</h3>
+                <p class="card-about">Просто обычный товар</p>
+                <button class="buy">Купить</button>
+            </div>
+            <div class="card">
+                <!-- "https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/" -->
+                <a href="Pencil.html">
+                    <img class="card-img" src="img/pencil.png" alt="Фото">
+                </a>
+                <a href="Pencil.html"><h3 class="name">Карандаш автоматический, 2B</h3></a>
+                <h3 class="price">39.99 руб.</h3>
+                <p class="card-about">Просто обычный товар</p>
+                <button class="buy">Купить</button>
+            </div>
+            <!-- <div class="card">
+                <a href="https://www.auchan.ru/product/ruchka-sharikovaya-stabilo-sinyaya/">
+                    <img class="card-img" src="img/pen.webp" alt="Фото">
+                </a>
+                <h3 class="name">Ручка шариковая Stabilo синяя</h3>
+                <h3 class="price">93.00 руб.</h3>
+                <p class="about">Просто обычный товар</p>
+                <button class="buy">Купить</button>
+            </div>
+            <div class="card">
+                <a href="https://www.auchan.ru/product/lineyka-plastik-30sm/">
+                    <img class="card-img" src="img/rules.webp" alt="Фото">
+                </a>
+                <h3 class="name">Линейка Hatber пластиковая, 30 см</h3>
+                <h3 class="price">25.99 руб.</h3>
+                <p class="about">Просто обычный товар</p>
+                <button class="buy">Купить</button>
+            </div> -->
+        </div>
+        <footer>
+            <a href="About.html">О магазине</a>
+        </footer>
+    </div>
 </body>
 </html>

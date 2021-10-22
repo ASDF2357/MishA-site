@@ -6,22 +6,41 @@
     <link rel="stylesheet" href="FirstFile.css">
 </head>
 <body>
-    <header>
-        <hr>
-        <a href="MainPage.html">На главную</a>
-        <a href="ShopList.html">К списку товаров</a>
-        <hr>
-    </header>
-    <h1>Карандаш автоматический, 2B</h1>
-    <img src="img/pen.webp" alt="Фото"> <br>
-    <p>Цена: 39.99 руб.</p>
-    <p>В наличии: 298 шт. (на 03.09.2021)</p>
-    <a href="https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/">Ссылка на сайт Ашана</a>
-
-    <footer>
-        <hr>
-        <a href="About.html">О магазине</a>
-        <hr>
-    </footer>
+    <div class="container">
+        <header>
+            <img class="logotip" src="img/Logotip.PNG" alt="Новый интернет магазин">
+            <!-- <a href="MainPage.html">На главную</a>
+            <a href="ShopList.html">К списку товаров</a> -->
+            <div class="menu">
+                <a href="MainPage.html">На главную</a>
+                <a href="ShopList.html">Список товаров</a>
+            </div>
+        </header>
+        <div class="about">
+            <div class="about-place-img">
+                <img class="about-img" src="img/pencil.png" alt="Фото">
+            </div>
+            <div class="about-list">
+                <p class="">Карандаш автоматический, 2B</p>
+                <p>Цена: 39.99 руб.</p>
+                <p>В наличии: 298 шт. (на 03.09.2021)</p>
+                <!-- <a href="https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/">Ссылка на сайт Ашана</a> -->
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <!-- <div class="card">
+            "https://www.auchan.ru/product/karandash-avtomat-s-tochilkoy/"
+            <a href="Pencil.html">
+                <img class="card-img" src="img/pencil.png" alt="Фото">
+            </a>
+            <a href="Pencil.html"><h3 class="name">Карандаш автоматический, 2B</h3></a>
+            <h3 class="price">39.99 руб.</h3>
+            <p class="about">Просто обычный товар</p>
+            <button class="buy">Купить</button>
+        </div> -->
+        <footer>
+            <a href="About.html">О магазине</a>
+        </footer>
+    </div>
 </body>
 </html>
