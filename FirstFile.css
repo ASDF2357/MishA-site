@@ -39,11 +39,39 @@ footer {
     background-color: paleturquoise;
     height: 25px;
     padding: 10px;
+    box-sizing:content-box !important;
 }
 
+@media screen and (min-width: 1350px) { 
+    .card {
+        width: 490px;
+    }
+    .about-list {
+        width: 45.65%;
+        margin: auto 1%;
+        vertical-align: top;
+    }
+    .about-place-img {
+        width: 47.65%;
+        margin: auto 1%;
+    }
+}
+@media screen and (max-width: 1350px) { 
+    .card {
+        width: 100%;
+    }
+    .about-list {
+        width: 95.65%;
+        margin: 0px 1% 10px;
+    }
+    .about-place-img {
+        width: 97.65%;
+        margin: 0px 1% 10px;
+    }
+}
 .card {
     display: inline-block;
-    width: 490px;
+    /* width: 490px; */
     height: 600px;
     background-color: white;
     margin-top: 10px;
@@ -52,7 +80,6 @@ footer {
     margin-left: 5px;
     padding: 10px;
 }
-
 .card-img {
     display: block;
     width: 70%;
@@ -60,7 +87,6 @@ footer {
     margin: 10px 15%;
     object-fit: contain;
 }
-
 .about-img {
     display: inline-block;
     width: 100%;
@@ -72,7 +98,6 @@ footer {
     object-fit: contain;
     top: 0px;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(245, 245, 245);
@@ -82,7 +107,6 @@ body {
     width: 80%;
     max-width: 1600px;
 }
-
 .name {
     display: inline-block;
     width: 70%;
@@ -98,20 +122,20 @@ body {
     display: inline-block;
     background-color: white;
     position:relative;
-    right: 0px;
-    height: 180px;
-    width: 45.65%;
-    margin: auto 1%;
-    padding: 10px 1%; /* topB leftR */
-    vertical-align: top;
+    height: 200px;
+    /* width: 45.65%; */
+    /* margin: auto 1%; */
+   padding: 10px 1%; /* topB leftR */
+    /* vertical-align: top; */
     outline: solid black 1px;
+    box-sizing:content-box !important;
 }
 .about-place-img {
     display: inline-block;
     position:relative;
-    height: 200px;
-    width: 47.65%;
-    margin: auto 1%;
+    height: 220px;
+    /* width: 47.65%; */
+    /* margin: auto 1%; */
 }
 .price {
     text-align: right;
