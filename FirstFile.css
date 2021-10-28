@@ -68,7 +68,7 @@ footer {
     /* margin: 10px, auto; */
     background-color: white;
     outline-style: solid;
-    outline-width: 2px;
+    outline-width: 1px;
     object-fit: contain;
     top: 0px;
 }
@@ -88,31 +88,30 @@ body {
     width: 70%;
 }
 .about {
-    /* width: 100%; */
+    width: 100%;
     display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* background-color: rgb(255, 101, 101); */
 }
 .about-list {
     display: inline-block;
+    background-color: white;
     position:relative;
     right: 0px;
-    height: 200px;
-    width: 500px;
-    background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding: 10px;
+    height: 180px;
+    width: 45.65%;
+    margin: auto 1%;
+    padding: 10px 1%; /* topB leftR */
+    vertical-align: top;
+    outline: solid black 1px;
 }
 .about-place-img {
     display: inline-block;
+    position:relative;
     height: 200px;
-    width: 500px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    width: 47.65%;
+    margin: auto 1%;
 }
 .price {
     text-align: right;
