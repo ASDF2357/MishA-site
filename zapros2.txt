@@ -1,0 +1,31 @@
+--Просмотр активных заказов у пользователей
+SELECT 
+	(SELECT LOGIN FROM Users WHERE Users.USER_ID == Orders.USER_ID) as "Nickname",
+	(SELECT STREET FROM Adresses WHERE Adresses.ADRESS_ID == Orders.ADRESS_ID) as "Street",
+	(SELECT HOUSE FROM Adresses WHERE Adresses.ADRESS_ID == Orders.ADRESS_ID) as "House",
+	(SELECT BUILDING FROM Adresses WHERE Adresses.ADRESS_ID == Orders.ADRESS_ID) as "Building",
+	DATA as "Data",
+	STATUS as "Status"
+FROM Orders WHERE STATUS = "new";
+
+--Просмотр историю цен картофеля
+SELECT 
+	(SELECT NAME FROM Products WHERE Products.NAME = "potatoes") as "Name",
+	(SELECT PRISE FROM Products WHERE Products.NAME = "potatoes") as "Prise",
+	DATA_BEGIN as "Begin",
+	DATA_END as "End"
+FROM Prises 
+WHERE Prises.PRODUCT_ID = (SELECT PRODUCT_ID FROM Products WHERE NAME = "potatoes");
+
+--Просмотр определенной корзины
+SELECT 
+	(SELECT
+		(SELECT LOGIN FROM Users WHERE Users.USER_ID = Orders.USER_ID)
+	FROM Orders
+	WHERE Orders.ORDER_ID = Order_list.ORDER_ID) as "Nickname",
+	ORDER_ID,
+	(SELECT NAME FROM Products WHERE Order_list.PRODUCT_ID = Products.PRODUCT_ID) as "Name",
+	(SELECT PRISE FROM Prises WHERE Order_list.PRISE_ID = Prises.PRISE_ID) as "Prise",
+	COUNT
+FROM Order_list 
+WHERE Order_list.ORDER_ID = (SELECT ORDER_ID FROM Orders WHERE ORDER_ID = 1); -- ORDER_ID = 2/3/4
