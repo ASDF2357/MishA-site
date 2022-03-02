@@ -7,15 +7,16 @@
     <!-- JavaScript Bundle with Popper -->
     <meta charset="UTF-8">
     <title>О магазине</title>
-    <link rel="stylesheet" href="FirstFile.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='FirstFile.css') }}">
+
 </head>
 <body>
     <div class="container">
         <header>
             <img class="logotip" src="img/Logotip.PNG" alt="Новый интернет магазин">
             <div class="menu">
-                <a href="MainPage.html">На главную</a>
-                <a href="ShopList.html">Список товаров</a>
+                <a href="/main">На главную</a>
+                <a href="/shop_list">Список товаров</a>
             </div>
         </header>
         <br>
@@ -40,7 +41,7 @@
             <input type="submit" value="Сохранить"> <br>
         </form><br>
         <footer>
-            <a href="About.html">О магазине</a>
+            <a href="/about">О магазине</a>
         </footer>
     </div>
 </body>
