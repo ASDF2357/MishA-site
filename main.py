@@ -15,10 +15,10 @@ app = Flask(__name__)
 #     return s
 
 
-@app.route('/user/<username>')
-def show_user_profile(username):
-    # show the user profile for that user
-    return 'User %s' % ((escape(username)+" ")*10)
+# @app.route('/user/<username>')
+# def show_user_profile(username):
+#     # show the user profile for that user
+#     return 'User %s' % ((escape(username)+" ")*10)
 
 
 @app.route('/main')
@@ -34,6 +34,11 @@ def show_about():
 @app.route('/shop_list')
 def show_shop_list():
     return render_template("ShopList.html")
+
+
+@app.route('/pencil')
+def show_pencil():
+    return render_template("Pencil.html")
 
 
 if __name__ == '__main__':
