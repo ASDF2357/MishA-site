@@ -1,9 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+# from datetime import datetime
 
 app = Flask(__name__)  # объект приложения Flask
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db_from_py.db' # привязываем базу данных
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db_from_py.db'  # привязываем базу данных
 db = SQLAlchemy(app)  # создаем объект SQLAlchemfrom datetime import datetime
 
 
@@ -69,6 +69,7 @@ class Prises(db.Model):
 
     def __repr__(self):
         return f'{self.product_id} {self.category_id} {self.address_id} {self.name}'
+
 
 db.create_all()
 
