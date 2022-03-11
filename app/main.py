@@ -21,6 +21,11 @@ app = Flask(__name__)
 #     return 'User %s' % ((escape(username)+" ")*10)
 
 
+@app.route('/')
+def show_main():
+    return render_template("Main.html")
+
+
 @app.route('/main')
 def show_main():
     return render_template("Main.html")
